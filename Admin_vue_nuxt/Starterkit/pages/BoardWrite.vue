@@ -29,6 +29,7 @@ export default {
         .catch(err => {
           console.error(err);
           alert('등록 중 오류가 발생했습니다.');
+          console.log("test")
         })
     }
   }
