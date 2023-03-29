@@ -35,35 +35,37 @@ export default {
 </script>
 
 <template>
-  <div>
-    <h1>{{ item.TITLE }}</h1>
-    <div class="inquiryInfo">
-      <div>작성자: {{ item.CREATED_BY }}</div>
-      <div>날짜: {{ item.CREATED_AT }}</div>
-      <div>상태 {{ item.ANSWER_YN }}</div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{ item.TITLE }}</h4>
+          <div class="row">
+            <div class="col-md-auto">작성자: {{ item.CREATED_BY }}</div>
+            <div class="col-md-auto">날짜: {{ item.CREATED_AT }}</div>
+            <div class="col-md-auto d-flex align-items-center">상태
+              <span class="badge rounded-pill bg-primary ml-1" v-if="item.ANSWER_YN === 'Y'">답변 완료</span>
+              <span class="badge rounded-pill bg-light ml-1" v-else>답변대기중</span>
+            </div>
+          </div>
+          <div class="row border-top mt-5">
+              <div class="text-center pt-5" v-html="item.CONTENT"></div>
+          </div>
+          <div class="row border-top border-bottom mt-5">
+            <div v-if="item.ANSWER_YN === 'Y'" class="text-center pt-5 pb-5">{{ item.ANSWER }} </div>
+            <div v-else class="text-center pt-5 pb-5">관리자가 답변을 준비중입니다.</div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <b-button @click="$router.push(`/BoardUpdate?seq=${item.SEQ}`)" variant="primary">수정</b-button>
+              <b-button @click="deleteItem" variant="dark">삭제</b-button>
+              <div class="float-end">
+                <b-button @click="$router.push('/Board')" variant="light">목록</b-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="inquiryContent">
-      <pre>{{ item.CONTENT }}</pre>
-      <div v-if="item.ANSWER_YN === 'Y'">{{ item.ANSWER }} </div>
-      <div v-else>관리자가 답변을 준비중입니다.</div>
-    </div>
-    <b-button @click="$router.push(`/BoardUpdate?seq=${item.SEQ}`)" variant="primary">수정</b-button>
-    <b-button @click="deleteItem" variant="danger">삭제</b-button>
-    <b-button @click="$router.push('/Board')">목록</b-button>
   </div>
 </template>
-
-<style>
-  .inquiryInfo {
-    display: flex;
-    gap: 2rem;
-  }
-
-  .inquiryContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin: 3rem 0;
-  }
- </style>
