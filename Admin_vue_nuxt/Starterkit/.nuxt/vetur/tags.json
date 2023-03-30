@@ -35,6 +35,12 @@
   "LazyMenu": {
     "description": "Auto imported from components/menu.js"
   },
+  "NuxtCkEditor": {
+    "description": "Auto imported from components/NuxtCkEditor.vue"
+  },
+  "LazyNuxtCkEditor": {
+    "description": "Auto imported from components/NuxtCkEditor.vue"
+  },
   "PageHeader": {
     "description": "Auto imported from components/Page-header.vue"
   },

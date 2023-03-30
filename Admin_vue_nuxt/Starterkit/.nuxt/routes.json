@@ -21,6 +21,13 @@
     "_name": "_d0ad5f18"
   },
   {
+    "name": "BoardUpdate2",
+    "path": "/BoardUpdate2",
+    "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\BoardUpdate2.vue",
+    "chunkName": "pages/BoardUpdate2",
+    "_name": "_5d98676e"
+  },
+  {
     "name": "BoardWrite",
     "path": "/BoardWrite",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\BoardWrite.vue",

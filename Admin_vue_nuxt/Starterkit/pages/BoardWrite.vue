@@ -1,18 +1,23 @@
 <script>
 import { postInquiry } from "../api/board";
-import CKEditor from "@ckeditor/ckeditor5-vue";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+// import UploadAdapter from "../UploadAdapter";
 
 export default {
   components: {
-    ckeditor: CKEditor.component
+    'ckeditor-nuxt': () => { if (process.client) { return import('@blowstack/ckeditor-nuxt') } },
   },
   data() {
     return {
       title: null,
       content: null,
       secret_yn: null,
-      editor: ClassicEditor,
+      editorConfig: {
+        removePlugins: ['Title'],
+        simpleUpload: {
+          uploadUrl: 'http://192.168.1.43/api/imageUpload/imageUpload.php',
+        }
+      },
+      contentHolder: ""
     }
   },
   methods: {
@@ -22,20 +27,23 @@ export default {
         content: this.content,
         secret_yn: this.secret_yn ? 'Y' : 'N'
       }
-      postInquiry(params)
-        .then(res => {
-          // console.log(res);
-          if (res.data.code === 200) {
-            this.$router.push('/Board');
-          } else {
+      if (params.title === '') { alert('제목을 입력해주세요'); }
+      else {
+        postInquiry(params)
+          .then(res => {
+            // console.log(res);
+            if (res.data.code === 200) {
+              this.$router.push('/Board');
+            } else {
+              alert('등록 중 오류가 발생했습니다.');
+            }
+          })
+          .catch(err => {
+            console.error(err);
             alert('등록 중 오류가 발생했습니다.');
-          }
-        })
-        .catch(err => {
-          console.error(err);
-          alert('등록 중 오류가 발생했습니다.');
-        })
-    }
+          })
+      }
+    },
   }
 }
 </script>
@@ -70,7 +78,7 @@ export default {
             </div>
             <div class="row mt-4">
               <div class="col">
-                <ckeditor v-model="content" :editor="editor"></ckeditor>
+                <ckeditor-nuxt v-model="content" :config="editorConfig" />
               </div>
             </div>
             <div class="row">

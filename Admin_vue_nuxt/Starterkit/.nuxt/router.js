@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _3cf09a4b = () => interopDefault(import('..\\pages\\Board.vue' /* webpackChunkName: "pages/Board" */))
 const _6b882bfc = () => interopDefault(import('..\\pages\\BoardDetail.vue' /* webpackChunkName: "pages/BoardDetail" */))
 const _d0ad5f18 = () => interopDefault(import('..\\pages\\BoardUpdate.vue' /* webpackChunkName: "pages/BoardUpdate" */))
+const _5d98676e = () => interopDefault(import('..\\pages\\BoardUpdate2.vue' /* webpackChunkName: "pages/BoardUpdate2" */))
 const _67401304 = () => interopDefault(import('..\\pages\\BoardWrite.vue' /* webpackChunkName: "pages/BoardWrite" */))
 const _973a2d76 = () => interopDefault(import('..\\pages\\test\\index.vue' /* webpackChunkName: "pages/test/index" */))
 const _78c7fd83 = () => interopDefault(import('..\\pages\\account\\forgot-password.vue' /* webpackChunkName: "pages/account/forgot-password" */))
@@ -47,6 +48,10 @@ export const routerOptions = {
     path: "/BoardUpdate",
     component: _d0ad5f18,
     name: "BoardUpdate"
+  }, {
+    path: "/BoardUpdate2",
+    component: _5d98676e,
+    name: "BoardUpdate2"
   }, {
     path: "/BoardWrite",
     component: _67401304,

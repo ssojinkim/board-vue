@@ -1,10 +1,9 @@
 <script>
 import { getBoardDetail, updateInquiry } from "../api/board";
-import CKEditor from "@ckeditor/ckeditor5-vue";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+
 export default {
   components: {
-    ckeditor: CKEditor.component
+    'ckeditor-nuxt': () => { if (process.client) { return import('@blowstack/ckeditor-nuxt') } },
   },
   data() {
     return {
@@ -12,7 +11,13 @@ export default {
       title: null,
       content: null,
       secret_yn: null,
-      editor: ClassicEditor,
+      editorConfig: {
+        removePlugins: ['Title'],
+        simpleUpload: {
+          uploadUrl: 'http://192.168.1.43/api/imageUpload/imageUpload.php',
+        }
+      },
+      contentHolder: ""
     }
   },
   // computed: {
@@ -85,7 +90,9 @@ export default {
             </div>
             <div class="row mt-4">
               <div class="col">
-                <ckeditor v-model="content" :editor="editor"></ckeditor>
+                <client-only placeholder="loading...">
+                  <ckeditor-nuxt v-model="content" :config="editorConfig" />
+                </client-only>
               </div>
             </div>
             <div class="row">

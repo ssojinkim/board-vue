@@ -4,6 +4,7 @@ export { default as HorizontalTopbar } from '../..\\components\\Horizontal-topba
 export { default as Loading } from '../..\\components\\Loading.vue'
 export { default as Logo } from '../..\\components\\Logo.vue'
 export { default as Menu } from '../..\\components\\menu.js'
+export { default as NuxtCkEditor } from '../..\\components\\NuxtCkEditor.vue'
 export { default as PageHeader } from '../..\\components\\Page-header.vue'
 export { default as RightSidebar } from '../..\\components\\Right-sidebar.vue'
 export { default as Sidebar } from '../..\\components\\Sidebar.vue'
@@ -21,6 +22,7 @@ export const LazyHorizontalTopbar = import('../..\\components\\Horizontal-topbar
 export const LazyLoading = import('../..\\components\\Loading.vue' /* webpackChunkName: "components_Loading" */).then(c => c.default || c)
 export const LazyLogo = import('../..\\components\\Logo.vue' /* webpackChunkName: "components_Logo" */).then(c => c.default || c)
 export const LazyMenu = import('../..\\components\\menu.js' /* webpackChunkName: "components_menu" */).then(c => c.default || c)
+export const LazyNuxtCkEditor = import('../..\\components\\NuxtCkEditor.vue' /* webpackChunkName: "components_NuxtCkEditor" */).then(c => c.default || c)
 export const LazyPageHeader = import('../..\\components\\Page-header.vue' /* webpackChunkName: "components_Page-header" */).then(c => c.default || c)
 export const LazyRightSidebar = import('../..\\components\\Right-sidebar.vue' /* webpackChunkName: "components_Right-sidebar" */).then(c => c.default || c)
 export const LazySidebar = import('../..\\components\\Sidebar.vue' /* webpackChunkName: "components_Sidebar" */).then(c => c.default || c)
