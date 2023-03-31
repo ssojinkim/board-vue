@@ -69,3 +69,7 @@ export default {
     </div>
   </div>
 </template>
+
+<style>
+figure.image img { max-width: 70%; }
+</style>
