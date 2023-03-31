@@ -3,112 +3,96 @@
     "name": "Board",
     "path": "/Board",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\Board.vue",
-    "chunkName": "pages/Board",
-    "_name": "_3cf09a4b"
+    "chunkName": "pages/Board"
   },
   {
     "name": "BoardDetail",
     "path": "/BoardDetail",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\BoardDetail.vue",
-    "chunkName": "pages/BoardDetail",
-    "_name": "_6b882bfc"
+    "chunkName": "pages/BoardDetail"
   },
   {
     "name": "BoardUpdate",
     "path": "/BoardUpdate",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\BoardUpdate.vue",
-    "chunkName": "pages/BoardUpdate",
-    "_name": "_d0ad5f18"
+    "chunkName": "pages/BoardUpdate"
   },
   {
     "name": "BoardUpdate2",
     "path": "/BoardUpdate2",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\BoardUpdate2.vue",
-    "chunkName": "pages/BoardUpdate2",
-    "_name": "_5d98676e"
+    "chunkName": "pages/BoardUpdate2"
   },
   {
     "name": "BoardWrite",
     "path": "/BoardWrite",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\BoardWrite.vue",
-    "chunkName": "pages/BoardWrite",
-    "_name": "_67401304"
+    "chunkName": "pages/BoardWrite"
   },
   {
     "name": "test",
     "path": "/test",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\test\\\\index.vue",
-    "chunkName": "pages/test/index",
-    "_name": "_973a2d76"
+    "chunkName": "pages/test/index"
   },
   {
     "name": "account-forgot-password",
     "path": "/account/forgot-password",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\account\\\\forgot-password.vue",
-    "chunkName": "pages/account/forgot-password",
-    "_name": "_78c7fd83"
+    "chunkName": "pages/account/forgot-password"
   },
   {
     "name": "account-login",
     "path": "/account/login",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\account\\\\login.vue",
-    "chunkName": "pages/account/login",
-    "_name": "_54ed5f32"
+    "chunkName": "pages/account/login"
   },
   {
     "name": "account-register",
     "path": "/account/register",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\account\\\\register.vue",
-    "chunkName": "pages/account/register",
-    "_name": "_34b49b15"
+    "chunkName": "pages/account/register"
   },
   {
     "name": "auth-lock-screen",
     "path": "/auth/lock-screen",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\auth\\\\lock-screen.vue",
-    "chunkName": "pages/auth/lock-screen",
-    "_name": "_341d972b"
+    "chunkName": "pages/auth/lock-screen"
   },
   {
     "name": "auth-login-1",
     "path": "/auth/login-1",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\auth\\\\login-1.vue",
-    "chunkName": "pages/auth/login-1",
-    "_name": "_001fccac"
+    "chunkName": "pages/auth/login-1"
   },
   {
     "name": "auth-recoverpwd",
     "path": "/auth/recoverpwd",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\auth\\\\recoverpwd.vue",
-    "chunkName": "pages/auth/recoverpwd",
-    "_name": "_33de308c"
+    "chunkName": "pages/auth/recoverpwd"
   },
   {
     "name": "auth-register-1",
     "path": "/auth/register-1",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\auth\\\\register-1.vue",
-    "chunkName": "pages/auth/register-1",
-    "_name": "_4ab6a5ba"
+    "chunkName": "pages/auth/register-1"
   },
   {
     "name": "utility-404",
     "path": "/utility/404",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\utility\\\\404.vue",
-    "chunkName": "pages/utility/404",
-    "_name": "_0e1edbd7"
+    "chunkName": "pages/utility/404"
   },
   {
     "name": "test-id",
     "path": "/test/:id",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\test\\\\_id.vue",
-    "chunkName": "pages/test/_id",
-    "_name": "_c0970e26"
+    "chunkName": "pages/test/_id"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\projects\\\\minible_vue_2.3.0\\\\Admin_vue_nuxt\\\\Starterkit\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_15cc4352"
+    "chunkName": "pages/index"
   }
 ]

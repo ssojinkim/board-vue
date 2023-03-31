@@ -17,18 +17,19 @@ export default {
           uploadUrl: 'http://192.168.1.43/api/imageUpload/imageUpload.php',
         }
       },
-      contentHolder: ""
+      contentHolder: "",
     }
   },
   methods: {
     onSubmit() {
-      const params = {
-        title: this.title,
-        content: this.content,
-        secret_yn: this.secret_yn ? 'Y' : 'N'
-      }
-      if (params.title === '') { alert('제목을 입력해주세요'); }
-      else {
+      if (!this.title || !this.content) {
+        alert("제목과 내용을 입력해주세요.")
+      } else {
+        const params = {
+          title: this.title,
+          content: this.content,
+          secret_yn: this.secret_yn ? 'Y' : 'N'
+        }
         postInquiry(params)
           .then(res => {
             // console.log(res);

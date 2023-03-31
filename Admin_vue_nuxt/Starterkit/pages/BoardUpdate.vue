@@ -37,24 +37,28 @@ export default {
   },
   methods: {
     onSubmit() {
-      const params = {
-        seq: this.seq,
-        title: this.title,
-        content: this.content,
-        secret_yn: this.secret_yn ? 'Y' : 'N'
-      }
-      updateInquiry(params)
-        .then(res => {
-          if (res.data.code === 200) {
-            this.$router.push(`/BoardDetail?seq=${this.seq}`);
-          } else {
+      if (!this.title || !this.content) {
+        alert("제목과 내용을 입력해주세요.")
+      } else {
+        const params = {
+          seq: this.seq,
+          title: this.title,
+          content: this.content,
+          secret_yn: this.secret_yn ? 'Y' : 'N'
+        }
+        updateInquiry(params)
+          .then(res => {
+            if (res.data.code === 200) {
+              this.$router.push(`/BoardDetail?seq=${this.seq}`);
+            } else {
+              alert('수정 중 오류가 발생했습니다.');
+            }
+          })
+          .catch(err => {
+            console.error(err);
             alert('수정 중 오류가 발생했습니다.');
-          }
-        })
-        .catch(err => {
-          console.error(err);
-          alert('수정 중 오류가 발생했습니다.');
-        })
+          })
+      }
     }
   }
 }
